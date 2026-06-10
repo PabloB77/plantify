@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DED395D78D1882B96FB898F /* GreenhouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AD837B18C12C2CFF36D502 /* GreenhouseView.swift */; };
+		0FB7E496754810066A0BADAE /* PlantifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAE1626AC656CA644BB54E /* PlantifyApp.swift */; };
+		10797B443ECD15BF894F22B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75F61250411AD57B82152C9 /* Assets.xcassets */; };
+		18B2AA0CB83F817EB8C22C60 /* HapticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96925B76B1AC07A1030DF27D /* HapticsService.swift */; };
+		1BB9D2DC718A314C967D33EC /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA13259BBF6DE892E3954B21 /* GameEngine.swift */; };
+		261D3C3B65D7ABDA8786F9DE /* EconomyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF6CE16C363B51218736837 /* EconomyServiceTests.swift */; };
+		2EF1413C20790C8FD844690F /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503EB4B3CFCC8237F5597E85 /* AppServices.swift */; };
+		2F4AEB8C4BF8277A38745BD9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DFABA0A1003A92A44A336C /* HomeView.swift */; };
+		31DB1A16A23370B602281E59 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D633308126A847E0A9A3FA38 /* GameScene.swift */; };
+		3795332943F29D2237AE9408 /* DropGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C86DD5C68C9A0C887049E7D /* DropGeneratorTests.swift */; };
+		37FCDA8CE12E518A2875C939 /* GameEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DBBEE8ADAEFF5637EA597C /* GameEngineTests.swift */; };
+		3808292832E02D25ECB87A5A /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E61172CCA12A1A759CBED64 /* AudioService.swift */; };
+		4D4FD15285BDDF4F845DB1B5 /* PixelUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723A805389EFD7D0EF126E92 /* PixelUI.swift */; };
+		50FBFED3E5149DACE0AFA098 /* MissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45670572B669675C68F7F80 /* MissionService.swift */; };
+		53077F922C896CA8F25546A5 /* EconomyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB5F4E6F48BB8A9DDB6321 /* EconomyService.swift */; };
+		581E075DF31AD596CF634834 /* GameContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC1D432A8B09AE6391E6275 /* GameContainerView.swift */; };
+		5BC08E5198A1496FDA19D65C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63D96FFE3754B39B960C049 /* NotificationService.swift */; };
+		5CB2061B8B1DAE063AB4629D /* GameCenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11765D9656B1E33CB97B1276 /* GameCenterService.swift */; };
+		9682B90D6DF32EF5F2BAAB45 /* GameFeel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730F586DB203BE138C5CE30 /* GameFeel.swift */; };
+		97C924B9EFEE22EE2B294976 /* Tier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3568C5EC35DE145A2C9C6C /* Tier.swift */; };
+		AE02D07E20A247922ADA10F5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2EAFC29759C91AE24939 /* Models.swift */; };
+		B1D2E0A4AF4F0E2F932C4C73 /* DropGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE86B7FA4AD525795633AD /* DropGenerator.swift */; };
+		B2AC91D176FF0744043A61C0 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F922B6D0F2B2C1DFDA440 /* GameViewModel.swift */; };
+		BB0E4F7ED7758C5A357FCFB4 /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88219096F455AB9AC86BF498 /* StoreService.swift */; };
+		EEA961E00A549092F6BDC18A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4731ABEFE15F722AD06562A0 /* SettingsView.swift */; };
+		F078F363EF4C4A30F340C165 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F59E8CBD4D69959152A21A /* PersistenceService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9F621BA51FB310CF21315B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B179BCA49DD60D70AF804A38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5F1F25216D255BAFCDD3A36;
+			remoteInfo = Plantify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0730F586DB203BE138C5CE30 /* GameFeel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFeel.swift; sourceTree = "<group>"; };
+		07F59E8CBD4D69959152A21A /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		0EC1D432A8B09AE6391E6275 /* GameContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameContainerView.swift; sourceTree = "<group>"; };
+		11765D9656B1E33CB97B1276 /* GameCenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterService.swift; sourceTree = "<group>"; };
+		17DFABA0A1003A92A44A336C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1C86DD5C68C9A0C887049E7D /* DropGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropGeneratorTests.swift; sourceTree = "<group>"; };
+		290F922B6D0F2B2C1DFDA440 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		3F3568C5EC35DE145A2C9C6C /* Tier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tier.swift; sourceTree = "<group>"; };
+		43EB5F4E6F48BB8A9DDB6321 /* EconomyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EconomyService.swift; sourceTree = "<group>"; };
+		4731ABEFE15F722AD06562A0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		48AD837B18C12C2CFF36D502 /* GreenhouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenhouseView.swift; sourceTree = "<group>"; };
+		4E61172CCA12A1A759CBED64 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		503EB4B3CFCC8237F5597E85 /* AppServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
+		723A805389EFD7D0EF126E92 /* PixelUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelUI.swift; sourceTree = "<group>"; };
+		7FBD1689535C16C533C443D6 /* Plantify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Plantify.entitlements; sourceTree = "<group>"; };
+		88219096F455AB9AC86BF498 /* StoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreService.swift; sourceTree = "<group>"; };
+		8CAE86B7FA4AD525795633AD /* DropGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropGenerator.swift; sourceTree = "<group>"; };
+		96925B76B1AC07A1030DF27D /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
+		ACF8186092F1AEB438B6AC84 /* Plantify.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Plantify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0BAE1626AC656CA644BB54E /* PlantifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantifyApp.swift; sourceTree = "<group>"; };
+		B2DBBEE8ADAEFF5637EA597C /* GameEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngineTests.swift; sourceTree = "<group>"; };
+		C45670572B669675C68F7F80 /* MissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionService.swift; sourceTree = "<group>"; };
+		C63D96FFE3754B39B960C049 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		C75F61250411AD57B82152C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D633308126A847E0A9A3FA38 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		DAF6CE16C363B51218736837 /* EconomyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EconomyServiceTests.swift; sourceTree = "<group>"; };
+		E11ED4DFBBB24F526394580A /* PlantifyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PlantifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA13259BBF6DE892E3954B21 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		F7DA2EAFC29759C91AE24939 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0375F04A79B46E3CEE98BCF5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0730F586DB203BE138C5CE30 /* GameFeel.swift */,
+				3F3568C5EC35DE145A2C9C6C /* Tier.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		297DF08CF87267E66BC75390 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7DA2EAFC29759C91AE24939 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B798E050809F652E62D3682 /* PlantifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C86DD5C68C9A0C887049E7D /* DropGeneratorTests.swift */,
+				DAF6CE16C363B51218736837 /* EconomyServiceTests.swift */,
+				B2DBBEE8ADAEFF5637EA597C /* GameEngineTests.swift */,
+			);
+			path = PlantifyTests;
+			sourceTree = "<group>";
+		};
+		6DB799A524924E25AD8E6F9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EC1D432A8B09AE6391E6275 /* GameContainerView.swift */,
+				48AD837B18C12C2CFF36D502 /* GreenhouseView.swift */,
+				17DFABA0A1003A92A44A336C /* HomeView.swift */,
+				723A805389EFD7D0EF126E92 /* PixelUI.swift */,
+				4731ABEFE15F722AD06562A0 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80037ABDD6A63DA21483F028 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				290F922B6D0F2B2C1DFDA440 /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8B5EE265F85CAEE67DD06ADF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4E61172CCA12A1A759CBED64 /* AudioService.swift */,
+				43EB5F4E6F48BB8A9DDB6321 /* EconomyService.swift */,
+				11765D9656B1E33CB97B1276 /* GameCenterService.swift */,
+				96925B76B1AC07A1030DF27D /* HapticsService.swift */,
+				C45670572B669675C68F7F80 /* MissionService.swift */,
+				C63D96FFE3754B39B960C049 /* NotificationService.swift */,
+				07F59E8CBD4D69959152A21A /* PersistenceService.swift */,
+				88219096F455AB9AC86BF498 /* StoreService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		939AFEA4FFBD42F11D5958F7 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				8CAE86B7FA4AD525795633AD /* DropGenerator.swift */,
+				EA13259BBF6DE892E3954B21 /* GameEngine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		D096A1F976D4C012C1939D97 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				D633308126A847E0A9A3FA38 /* GameScene.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		D4BDC1B4701CB4C423E1182B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				503EB4B3CFCC8237F5597E85 /* AppServices.swift */,
+				B0BAE1626AC656CA644BB54E /* PlantifyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DB12A14560D0F6557608505C /* Plantify */ = {
+			isa = PBXGroup;
+			children = (
+				C75F61250411AD57B82152C9 /* Assets.xcassets */,
+				7FBD1689535C16C533C443D6 /* Plantify.entitlements */,
+				D4BDC1B4701CB4C423E1182B /* App */,
+				0375F04A79B46E3CEE98BCF5 /* Core */,
+				939AFEA4FFBD42F11D5958F7 /* Engine */,
+				297DF08CF87267E66BC75390 /* Models */,
+				D096A1F976D4C012C1939D97 /* Scene */,
+				8B5EE265F85CAEE67DD06ADF /* Services */,
+				80037ABDD6A63DA21483F028 /* ViewModels */,
+				6DB799A524924E25AD8E6F9D /* Views */,
+			);
+			path = Plantify;
+			sourceTree = "<group>";
+		};
+		E13956114A5256F460105E3A = {
+			isa = PBXGroup;
+			children = (
+				DB12A14560D0F6557608505C /* Plantify */,
+				3B798E050809F652E62D3682 /* PlantifyTests */,
+				F5580B8E994343BE9563C880 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5580B8E994343BE9563C880 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACF8186092F1AEB438B6AC84 /* Plantify.app */,
+				E11ED4DFBBB24F526394580A /* PlantifyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E44BDD102209B67003E18AB /* PlantifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39D53713FA79659FB5481BDD /* Build configuration list for PBXNativeTarget "PlantifyTests" */;
+			buildPhases = (
+				4451AC4175062AF14FF5B846 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86B323E3D9B8E0962253D2E3 /* PBXTargetDependency */,
+			);
+			name = PlantifyTests;
+			packageProductDependencies = (
+			);
+			productName = PlantifyTests;
+			productReference = E11ED4DFBBB24F526394580A /* PlantifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5F1F25216D255BAFCDD3A36 /* Plantify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3BCFBCB03D82245E5B63DDA /* Build configuration list for PBXNativeTarget "Plantify" */;
+			buildPhases = (
+				AF87E253A383CBE3F97C98DC /* Sources */,
+				375609FE2EB534C2E369B165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Plantify;
+			packageProductDependencies = (
+			);
+			productName = Plantify;
+			productReference = ACF8186092F1AEB438B6AC84 /* Plantify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B179BCA49DD60D70AF804A38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = F04E841B528D3D36C84ED923 /* Build configuration list for PBXProject "Plantify" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E13956114A5256F460105E3A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F5580B8E994343BE9563C880 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5F1F25216D255BAFCDD3A36 /* Plantify */,
+				7E44BDD102209B67003E18AB /* PlantifyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		375609FE2EB534C2E369B165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10797B443ECD15BF894F22B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4451AC4175062AF14FF5B846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3795332943F29D2237AE9408 /* DropGeneratorTests.swift in Sources */,
+				261D3C3B65D7ABDA8786F9DE /* EconomyServiceTests.swift in Sources */,
+				37FCDA8CE12E518A2875C939 /* GameEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF87E253A383CBE3F97C98DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF1413C20790C8FD844690F /* AppServices.swift in Sources */,
+				3808292832E02D25ECB87A5A /* AudioService.swift in Sources */,
+				B1D2E0A4AF4F0E2F932C4C73 /* DropGenerator.swift in Sources */,
+				53077F922C896CA8F25546A5 /* EconomyService.swift in Sources */,
+				5CB2061B8B1DAE063AB4629D /* GameCenterService.swift in Sources */,
+				581E075DF31AD596CF634834 /* GameContainerView.swift in Sources */,
+				1BB9D2DC718A314C967D33EC /* GameEngine.swift in Sources */,
+				9682B90D6DF32EF5F2BAAB45 /* GameFeel.swift in Sources */,
+				31DB1A16A23370B602281E59 /* GameScene.swift in Sources */,
+				B2AC91D176FF0744043A61C0 /* GameViewModel.swift in Sources */,
+				0DED395D78D1882B96FB898F /* GreenhouseView.swift in Sources */,
+				18B2AA0CB83F817EB8C22C60 /* HapticsService.swift in Sources */,
+				2F4AEB8C4BF8277A38745BD9 /* HomeView.swift in Sources */,
+				50FBFED3E5149DACE0AFA098 /* MissionService.swift in Sources */,
+				AE02D07E20A247922ADA10F5 /* Models.swift in Sources */,
+				5BC08E5198A1496FDA19D65C /* NotificationService.swift in Sources */,
+				F078F363EF4C4A30F340C165 /* PersistenceService.swift in Sources */,
+				4D4FD15285BDDF4F845DB1B5 /* PixelUI.swift in Sources */,
+				0FB7E496754810066A0BADAE /* PlantifyApp.swift in Sources */,
+				EEA961E00A549092F6BDC18A /* SettingsView.swift in Sources */,
+				BB0E4F7ED7758C5A357FCFB4 /* StoreService.swift in Sources */,
+				97C924B9EFEE22EE2B294976 /* Tier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86B323E3D9B8E0962253D2E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5F1F25216D255BAFCDD3A36 /* Plantify */;
+			targetProxy = C9F621BA51FB310CF21315B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3C948C7B239B19B3E0E35603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PlantifyTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plantify.app/Plantify";
+			};
+			name = Debug;
+		};
+		691CFB0341911E8C50B8E6C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PlantifyTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plantify.app/Plantify";
+			};
+			name = Release;
+		};
+		7D45B86E7613165AF1D88C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		81692E7A8163E28653F8F9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		B7302C56DFDCFF492A188DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Plantify/Plantify.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Plantify;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.plantify;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FF12A89BDC77721C207A2FF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Plantify/Plantify.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Plantify;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.plantify;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39D53713FA79659FB5481BDD /* Build configuration list for PBXNativeTarget "PlantifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C948C7B239B19B3E0E35603 /* Debug */,
+				691CFB0341911E8C50B8E6C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E3BCFBCB03D82245E5B63DDA /* Build configuration list for PBXNativeTarget "Plantify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7302C56DFDCFF492A188DE7 /* Debug */,
+				FF12A89BDC77721C207A2FF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F04E841B528D3D36C84ED923 /* Build configuration list for PBXProject "Plantify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D45B86E7613165AF1D88C1B /* Debug */,
+				81692E7A8163E28653F8F9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B179BCA49DD60D70AF804A38 /* Project object */;
+}
