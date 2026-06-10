@@ -180,14 +180,16 @@ final class GameScene: SKScene, SKPhysicsContactDelegate {
 
         // Physics: floor + two tall walls (extended above the visible crate
         // so plants cannot escape sideways while airborne).
-        let body = SKPhysicsBody(bodies: [
-            SKPhysicsBody(edgeFrom: CGPoint(x: innerLeft - 2, y: floorTopY),
-                          to: CGPoint(x: innerRight + 2, y: floorTopY)),
-            SKPhysicsBody(edgeFrom: CGPoint(x: innerLeft, y: floorTopY),
-                          to: CGPoint(x: innerLeft, y: size.height + 200)),
-            SKPhysicsBody(edgeFrom: CGPoint(x: innerRight, y: floorTopY),
-                          to: CGPoint(x: innerRight, y: size.height + 200)),
-        ])
+        //
+        // NOTE: This must be a single edge-chain body. `SKPhysicsBody(bodies:)`
+        // only supports volume-based children; compounding edge bodies yields
+        // a body with no collision geometry, and plants fall through the crate.
+        let containerPath = CGMutablePath()
+        containerPath.move(to: CGPoint(x: innerLeft, y: size.height + 200))
+        containerPath.addLine(to: CGPoint(x: innerLeft, y: floorTopY))
+        containerPath.addLine(to: CGPoint(x: innerRight, y: floorTopY))
+        containerPath.addLine(to: CGPoint(x: innerRight, y: size.height + 200))
+        let body = SKPhysicsBody(edgeChainFrom: containerPath)
         body.friction = GameFeel.friction
         body.restitution = 0.05
         body.categoryBitMask = wallCategory
@@ -300,6 +302,7 @@ final class GameScene: SKScene, SKPhysicsContactDelegate {
         body.angularDamping = GameFeel.angularDamping
         body.density = GameFeel.plantDensity
         body.allowsRotation = true
+        body.usesPreciseCollisionDetection = true
         body.categoryBitMask = plantCategory
         body.contactTestBitMask = plantCategory
         body.collisionBitMask = plantCategory | wallCategory
